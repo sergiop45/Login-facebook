@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f0f2f5;
+    align-items: center;
+}
+main {
+    display: flex;
+    align-items: center;
+    margin: 35% 50px;
+}
+
+/*Lado esquerdo*/
+
+.conteudo-esquerda {
+    align-items: center;
+    width: 50%;
+    margin-right: 50px;
+}
+.conteudo-esquerda img {
+    height: 106px;
+    margin-left: -32px;
+}
+.conteudo-esquerda p {
+    font-size: 24px;
+    color: #1c1e21;
+}
+
+/*Lado direito*/
+
+.conteudo-direita {
+    align-items: center;
+    width: 50%;
+    text-align: center;
+}
+.conteudo-direita form {
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(0, 0, 0, 0.1) 0px 8px 16px 0px;
+    padding: 20px;
+}
+.conteudo-direita form input {
+    margin-top: 12px;
+    border-radius: 6px;
+    padding: 17px 5px;
+    border: none;
+    
+}
+.conteudo-direita form input:onfocus {
+    border: red;
+}
+.conteudo-direita form button {
+    margin-top: 12px;
+}
+.conteudo-direita #esquecersenha {
+    margin-top: 18px;
+    font-size: 14px;
+    color: #1877f2;
+    cursor: pointer;
+}
+.conteudo-direita hr {
+    margin-top: 20px;
+    
+    font-size: 14px;
+
+}
+.conteudo-direita form button {
+    margin-top: 40px;
+}
+.btn {
+    padding: 11px 4px;
+    color: #ffffff;
+    background-color: #1877f2;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 19px;
+    font-weight: bold;
+}
+.tipo2 {
+    margin: 0 auto;
+    font-size: 17px;
+    background-color: #42b72a;
+    width: 50%;
+    padding: 11px 4px;
+}
+.conteudo-direita p {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+.conteudo-direita p a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #1c1e21;
+}
+
+/*Mobile*/
+
+@media (max-width: 700px) {
+    main {
+        flex-direction: column;
+    }
+    .conteudo-esquerda {
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .conteudo-esquerda img {
+        margin-left: 0px;
+    }
+    .conteudo-esquerda p {
+        padding-left: 25px;
+        
+    }
+    .conteudo-direita {
+        text-align: center;
+    }
+}
